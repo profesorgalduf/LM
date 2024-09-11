@@ -1,11 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Llenguatge de marques</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #1c1c1e; /* Fondo oscuro sólido */
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #bbb;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        /* Menús en cajas */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            background-color: #333;
+        }
+
+        .card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #00cc99;
+        }
+
+        .card p {
+            color: #ccc;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #00cc99;
+            font-weight: bold;
+            border: 1px solid #00cc99;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .card a:hover {
+            background-color: #00cc99;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1c1c1e;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #888;
+        }
+
+    </style>
 </head>
 <body>
-    
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Programación 1º DAM/DAW</h1>
+        <p>Curso de Llenguatge de marques</p>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h2>Contenidos</h2>
+        <div class="cards">
+            <!-- Caja 1 -->
+            <div class="card">
+                <h3>UD1: Introducción</h3>
+                <p>Introducción</p>
+                <a href="UD1/index.html">Leer más</a>
+            </div>
+        </div>
+    </div>
+
+<!-- Pie de página -->
+<footer>
+    <p>&copy; 2024 Sitio web educativo. Todos los derechos reservados.</p>
+    <p>Este proyecto está licenciado bajo la <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Licencia Apache 2.0</a>.</p>
+    <p>Puedes utilizar, modificar y distribuir este proyecto libremente bajo los términos de la licencia.</p>
+</footer>
+
 </body>
 </html>
